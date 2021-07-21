@@ -4,21 +4,45 @@
 body {
   font-size: 21px;
 }
-
-nav {
-  background-color: #9c4dcc;
-  line-height: 3em;
-  header {
-  }
+.container{
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
 }
-nav a {
+/*nav,
+flex-grow:1
+header,
+flex-grow:2
+main,
+flex-grow:3
+footer,
+flex-grow:4
+*/
+.navbar {
+  background-color: #8a272c;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.nav-link {
   color: #ffb79d;
+  margin-right: 0.5rem ;
+}
+.nav-link{
+   color: white;
+   margin-right: 0.5rem;
 }
 header {
-  background-color: goldenrod;
+  background-color: rgb(156, 156, 156);
 }
 a {
   text-decoration: none;
+}
+main{
+   flex-grow 1; ;
 }
 footer ul {
   list-style-type: none;
