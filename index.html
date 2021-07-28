@@ -16,13 +16,16 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!--Navigation Bar Section-->
 
       <nav class="navbar">
         <a href="" class="nav-link">MICHAEL KITAVI</a>
-        <div>
-          <a href="./index.html" class="nav-link"></a><i class="fas fa-home"></i>home</a>
+        <button id="navbar-icon"><i class="fas fa-ellipsis-h"></i></button>
+        <div class="navbar-collapse">
+          <a href="./index.html" class="nav-link"
+          ></a><i class="fas fa-home"></i> home</a>
+          
           <a href="./projects.html" class="nav-link"
             ><i class="fas fa-tasks"></i> project</a
           >
@@ -38,41 +41,45 @@
           <a href="./contact.html" class="nav-link"
             ><i class="fas fa-address-book"></i> contact</a
           ><br />
-          <a href=""class="nav-link"><si class="fas fa-file">Resume</a>
+          <a href=""class="nav-link"><si class="fas fa-file"> Resume</a>
           <hr />
         </div>
       </nav>
 
       <!--jumbotron Section-->
 
-      <header>
-        <img src="images/IMG_6507.JPG" alt="" height="400" width="400" />
-        <img
-          src="images/IMG_20210718_154437.jpg"
-          alt=""
-          height="400"
-          width="400"
-        />
+      <header class="jumbotron">
+        <img src="images/IMG_6507-removebg-preview.png" alt="" height="400" width="400" />
+        <div>
 
-        <h1>I am Michael Kitavi</h1>
-        <p>I am a Footballer. I am a Grey hat hacker.</p>
-        <hr />
+          <h1>Hi, am Michael Kitavi</h1>
+          <p>An experienced web developer working at Microsoft.</p>
+        </div>
       </header>
-      <main>
+
+      <main class="container">
         <section class="featured-projects">
-          <h2>Featured projects</h2>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
+          <h2 class="text-center">Featured projects</h2>
+          <div class="cards-container">
+          <div class="card b box-shadow"></div>
+          <div class="card b box-shadow"></div>
+          <div class="card b box-shadow"></div>
+        </div>
         </section>
-        <section class="testimonials">
-          <h2>Testimonials</h2>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
+
+        <section class="testimonials b box-shadow">
+          <h2 class="text-center">Testimonials</h2>
+          <div class="class-container">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
         </section>
+
         <section class="faqs">
-          <h2>Frequently asked Questions</h2>
+          <h2 class="text-center">Frequently asked Questions</h2>
+          <div class="class-container">
+        </div>
         </section>
       </main>
 

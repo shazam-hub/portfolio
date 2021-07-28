@@ -4,10 +4,17 @@
 body {
   font-size: 21px;
 }
-.container{
+.container-fluid{
    display: flex;
    flex-direction: column;
    height: 100vh;
+}
+.container{
+  width:90vw;
+  margin:auto;
+}
+.text-center{
+  text-align: center;
 }
 /*nav,
 flex-grow:1
@@ -19,7 +26,7 @@ footer,
 flex-grow:4
 */
 .navbar {
-  background-color: #8a272c;
+  background-color: #e94d4d;
   height: 3em;
   display: flex;
   flex-direction: row;
@@ -28,22 +35,49 @@ flex-grow:4
 }
 
 .nav-link {
-  color: #ffb79d;
-  margin-right: 0.5rem ;
+  color: #ffffff;
+  margin-right: 0.5rem;
 }
-.nav-link{
-   color: white;
+.nav-link:hover {
+   color: rgb(145, 139, 139);
    margin-right: 0.5rem;
 }
-header {
-  background-color: rgb(156, 156, 156);
+.jumbotron {
+  background-color: rgb(137, 189, 240);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 }
+
 a {
   text-decoration: none;
 }
 main{
    flex-grow 1; ;
 }
+
+.cards-container{
+  display:flex;
+  flex-direction:row;
+}
+
+.card {
+   width:300px;
+   min-height:300px;
+   margin: 0.5rem;
+}
+
+.b {
+  border: 1px solid rgb(29, 53, 77);
+}
+
+.box-shadow {
+  box-shadow: 0 0 1rem 0 rgb(190, 215, 240);
+}
+
+
 footer ul {
   list-style-type: none;
   display: flex;
@@ -58,4 +92,20 @@ footer {
 footer p {
   color: indigo;
   text-align: center;
+}
+#navbar-icon{
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .jumbotron{
+    flex-direction: column;
+  }
+  
+  .navbar-collapse{
+    display: none;
+  }
+  #navbar-icon{
+    display: inline-block;
+  }
 }
