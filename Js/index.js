@@ -1,6 +1,7 @@
-function calculator(e) {
+function calculator() {
   let num1 = document.getElementById("num1");
   let num2 = document.getElementById("num2");
+  let output = document.getElementById("output");
 
   num1 = parseInt(num1.value);
   num2 = parseInt(num2.value);
@@ -9,6 +10,15 @@ function calculator(e) {
   const diff = num1 - num2;
   const product = num1 * num2;
   const quot = num1 / num2;
+  output.innerHTML =
+    "Sum: " +
+    sum +
+    "\nDifference: " +
+    diff +
+    "\nProduct: " +
+    product +
+    "\nQuotient: " +
+    quot;
 
   //console.log("Sum: " + sum);
   // console.log("Difference: " + diff);
@@ -17,3 +27,13 @@ function calculator(e) {
 
   console.log("Type of quotient:" + typeof quot);
 }
+
+let navbar_icon= document.getElementById("navbar-icon");
+navbar_icon.addEventListener("click", function() {
+   let collapse= document.getElementById("collapse");
+   collapse.style.display="flex";
+   if(collapse.style.display =="none")
+      collapse.style.display="flex";
+   else
+     collapse.style.display="none";
+});
